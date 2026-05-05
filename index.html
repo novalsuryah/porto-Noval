@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noval Surya - Web Developer</title>
+    <!-- Favicon / Logo di Tab Browser -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='70' font-family='Courier New, monospace' font-size='65' font-weight='bold' fill='%23a855f7' text-anchor='middle'>N</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts untuk Typography Modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Loading Screen (Preloader) -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <!-- Logo -->
+            <div class="preloader-logo">
+                <span class="logo-bracket">&lt;</span>Noval<span class="logo-accent">_Dev</span><span class="logo-bracket">/&gt;</span>
+            </div>
+            <!-- Animasi Titik -->
+            <div class="preloader-dots">
+                <span></span><span></span><span></span>
+            </div>
+            <!-- Progress Bar -->
+            <div class="preloader-bar-wrap">
+                <div class="preloader-bar" id="preloader-bar"></div>
+            </div>
+            <!-- Teks Status -->
+            <p class="preloader-text" id="preloader-text">Memuat portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="container navbar">
+            <a href="#" class="logo"><span class="logo-bracket">&lt;</span>Noval<span class="logo-accent">_Dev</span><span class="logo-bracket">/&gt;</span></a>
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama (awalnya tidak terlihat agar transisi smooth) -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="typing-container"><span id="typing-text" class="color-changing-text"></span><span class="cursor">|</span></h1>
+                    <h2>Web Developer & UI/UX Designer</h2>
+                    <p>Memiliki ketertarikan di bidang web development dengan fokus pada pembuatan website yang dinamis dan interaktif. Terus mengembangkan kemampuan melalui pembelajaran dan proyek praktik.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Lihat Project</a>
+                        <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                    </div>
+                </div>
+                <!-- Animasi Lucu di Kanan -->
+                <div class="hero-animation">
+                    <div class="cute-cat">
+                        <div class="cat-head">😸</div>
+                        <div class="cat-hand">🤚</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title"><span class="about-title-animated">Tentang Saya</span></h2>
+
+                <!-- Profil Pill Button -->
+                <div class="about-pill-wrap">
+                    <span class="about-pill"><i class="fas fa-user"></i> Profil Saya</span>
+                </div>
+
+                <div class="about-content">
+                    <!-- Kiri: Foto Profil -->
+                    <div class="about-photo-wrap">
+                        <div class="about-photo-frame">
+                            <img src="image/foto.jpg" alt="Noval Surya" class="about-photo" onerror="this.src='https://ui-avatars.com/api/?name=Noval+Surya&size=400&background=1e293b&color=a855f7&bold=true&font-size=0.35'">
+                            <div class="about-photo-badge">
+                                <i class="fas fa-code"></i> Web Developer
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kanan: Teks & Highlight -->
+                    <div class="about-text">
+                        <h3 class="about-heading about-heading-animated">Passionate Web Developer dengan Fokus pada Solusi Digital</h3>
+                        <p>Saya adalah siswa SMKN 2 Surabaya jurusan RPL (Rekayasa Perangkat Lunak) yang saat ini duduk di kelas 11. Saya memiliki tujuan untuk terus belajar dan mengembangkan kemampuan dalam merancang serta mengimplementasikan sistem yang efisien, terstruktur, dan stabil menggunakan konsep full-stack development.</p>
+                        <p>Saya memiliki pengalaman dalam membangun berbagai jenis website, dari landing page sederhana hingga aplikasi web kompleks dengan database. Sebagai Full Stack Web Developer, spesialisasi saya ada pada pengembangan sistem menggunakan PHP.</p>
+
+                        <!-- Highlight Cards -->
+                        <div class="about-highlights">
+                            <div class="about-highlight-item">
+                                <div class="about-highlight-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="about-highlight-text">
+                                    <strong>Backend</strong>
+                                    <span>PHP (Native & MVC Pattern)</span>
+                                </div>
+                            </div>
+                            <div class="about-highlight-item">
+                                <div class="about-highlight-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="about-highlight-text">
+                                    <strong>Database</strong>
+                                    <span>MySQL/MariaDB (Perancangan, Normalisasi)</span>
+                                </div>
+                            </div>
+                            <div class="about-highlight-item">
+                                <div class="about-highlight-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="about-highlight-text">
+                                    <strong>Frontend Dasar</strong>
+                                    <span>HTML, CSS, JavaScript (Responsive Design)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section">
+            <div class="container">
+                <h2 class="section-title"><span class="skills-title-animated">Keahlian Saya</span></h2>
+                <div class="skills-grid">
+
+                    <!-- Card 1: HTML & CSS -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="skill-name">HTML &amp; CSS</h3>
+                        <p class="skill-desc">Membuat struktur dan styling website yang responsif, modern, dan cross-browser compatible.</p>
+                    </div>
+
+                    <!-- Card 2: JavaScript -->
+                    <div class="skill-card">
+                        <div class="skill-icon skill-icon--js">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3 class="skill-name skill-name--js">JavaScript</h3>
+                        <p class="skill-desc">Mengembangkan interaktivitas dan logika frontend yang dinamis menggunakan JavaScript modern (ES6+).</p>
+                    </div>
+
+                    <!-- Card 3: PHP -->
+                    <div class="skill-card">
+                        <div class="skill-icon skill-icon--php">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <h3 class="skill-name skill-name--php">PHP</h3>
+                        <p class="skill-desc">Membangun aplikasi web dinamis dengan PHP untuk backend yang powerful dan efisien.</p>
+                    </div>
+
+                    <!-- Card 4: MySQL -->
+                    <div class="skill-card">
+                        <div class="skill-icon skill-icon--db">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="skill-name skill-name--db">MySQL</h3>
+                        <p class="skill-desc">Merancang dan mengelola database relasional yang efisien untuk mendukung aplikasi web.</p>
+                    </div>
+
+                    <!-- Card 5: UI/UX -->
+                    <div class="skill-card">
+                        <div class="skill-icon skill-icon--uiux">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3 class="skill-name skill-name--uiux">UI/UX Design</h3>
+                        <p class="skill-desc">Merancang antarmuka yang intuitif, estetis, dan berfokus pada pengalaman pengguna yang optimal.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section bg-light">
+            <div class="container">
+                <h2 class="section-title project-title-animated">My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="image/footera.png" alt="Aplikasi E-Commerce Footera">
+                        </div>
+                        <div class="project-info">
+                            <h3>Website Toko Sepatu</h3>
+                            <p>Website toko sepatu ini menyediakan berbagai pilihan sepatu berkualitas dengan informasi lengkap seperti harga, kategori, ukuran, foto produk, dan status ketersediaan untuk memudahkan pelanggan dalam berbelanja.</p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/400x250/1f2937/ffffff?text=Dashboard" alt="Admin Dashboard">
+                        </div>
+                        <div class="project-info">
+                            <h3>Admin Dashboard</h3>
+                            <p>Dashboard admin minimalis dan rapi menggunakan CSS Grid dan Flexbox.</p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/400x250/3b82f6/ffffff?text=Landing+Page" alt="Landing Page">
+                        </div>
+                        <div class="project-info">
+                            <h3>Landing Page Modern</h3>
+                            <p>Landing page dengan tingkat konversi tinggi, dioptimasi untuk mobile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container text-center">
+                <h2 class="section-title contact-title">Hubungi Saya</h2>
+                <p style="color: var(--text-light); margin-bottom: 3rem;">Tertarik untuk bekerja sama? Hubungi saya melalui:</p>
+                
+                <div class="contact-cards">
+                    <!-- Card Instagram -->
+                    <a href="#" class="contact-card card-ig">
+                        <i class="fab fa-instagram"></i>
+                        <span>noval_surya</span>
+                    </a>
+                    <!-- Card WhatsApp -->
+                    <a href="https://wa.me/6281234567890" class="contact-card card-wa">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Noval Surya</span>
+                    </a>
+                    <!-- Card Email -->
+                    <a href="mailto:emailanda@gmail.com" class="contact-card card-email">
+                        <i class="fas fa-envelope"></i>
+                        <span>noval@gmail.com</span>
+                    </a>
+                    <!-- Card GitHub -->
+                    <a href="#" class="contact-card card-github">
+                        <i class="fab fa-github"></i>
+                        <span>NovalDev</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Noval Surya - Web Developer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
