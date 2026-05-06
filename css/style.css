@@ -760,8 +760,6 @@ header {
 .skill-icon--php { color: #777bb4; filter: drop-shadow(0 0 12px rgba(119, 123, 180, 0.5)); }
 .skill-icon--db  { color: #00758f; filter: drop-shadow(0 0 12px rgba(0, 117, 143, 0.5)); }
 .skill-icon--uiux{ color: #ec4899; filter: drop-shadow(0 0 12px rgba(236, 72, 153, 0.5)); }
-.skill-icon--layout{ color: #10b981; filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.5)); }
-.skill-icon--responsive{ color: #f59e0b; filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.5)); }
 .skill-icon--git { color: #f05032; filter: drop-shadow(0 0 12px rgba(240, 80, 50, 0.5)); }
 
 /* --- Skill Name --- */
@@ -781,8 +779,6 @@ header {
 .skill-name--php  { background: linear-gradient(90deg, #8892bf, #a855f7); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .skill-name--db   { background: linear-gradient(90deg, #00758f, #00a8cc); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .skill-name--uiux { background: linear-gradient(90deg, #ec4899, #a855f7); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-.skill-name--layout { background: linear-gradient(90deg, #10b981, #34d399); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-.skill-name--responsive { background: linear-gradient(90deg, #f59e0b, #fbbf24); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .skill-name--git  { background: linear-gradient(90deg, #f05032, #fc6d26); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
 /* --- Skill Description --- */
@@ -1258,11 +1254,6 @@ header {
     
     .skills-grid > .skill-card {
         grid-column: auto;
-    }
-
-    /* Memusatkan item terakhir jika ganjil (opsional) */
-    .skills-grid > .skill-card:last-child:nth-child(7) {
-        grid-column: 2 / 3;
     }
 
     .projects-grid {
