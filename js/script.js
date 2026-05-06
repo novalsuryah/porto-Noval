@@ -1,13 +1,19 @@
-// Hapus hash fragment di URL dan paksa scroll ke atas saat direfresh
-if (window.history.replaceState) {
+// Nonaktifkan fitur "Scroll Restoration" bawaan browser agar selalu mulai dari atas saat di-refresh
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+// Hapus hash fragment di URL (misal #about) saat direfresh
+if (window.location.hash) {
     window.history.replaceState(null, null, window.location.pathname);
 }
+
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Pastikan scroll benar-benar di atas saat halaman selesai dimuat
+    // Paksa scroll ke atas sekali lagi saat DOM selesai diload
     window.scrollTo(0, 0);
     
     // --- 1. PRELOADER (Loading Screen) ---
