@@ -854,46 +854,158 @@ header {
     font-size: 0.95rem;
 }
 
-/* --- Contact Section --- */
-.contact-content {
+/* --- Download CV Section --- */
+.cv-title {
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.cv-title::after {
+    background: linear-gradient(90deg, #3b82f6, #ec4899);
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.8);
+    height: 4px;
+    width: 80px;
+}
+
+.cv-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+.cv-card {
+    background-color: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.form-group {
+.cv-header {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-.form-group label {
+.cv-icon-wrapper {
+    background: linear-gradient(135deg, #3b82f6, #a855f7);
+    width: 80px;
+    height: 80px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    flex-shrink: 0;
+}
+
+.cv-icon-wrapper i {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.cv-icon-text {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.cv-header-text h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.cv-header-text p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.cv-meta {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.85rem;
+    color: #38bdf8;
+    flex-wrap: wrap;
+}
+
+.cv-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.btn-download {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #0ea5e9, #ec4899);
+    color: white;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+    border: none;
+}
+
+.btn-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(236, 72, 153, 0.4);
+}
+
+.btn-download i {
+    margin-right: 0.5rem;
+}
+
+.cv-details {
+    border-left: 3px solid #0ea5e9;
+    padding-left: 1.5rem;
+    box-shadow: -15px 0 20px -15px rgba(14, 165, 233, 0.3);
+}
+
+.cv-details h4 {
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
     font-weight: 600;
 }
 
-.form-group input, .form-group textarea {
-    padding: 0.75rem;
-    border: 1px solid #374151;
-    border-radius: 0.5rem;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: var(--transition);
-    background-color: var(--bg-color);
+.cv-details ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.cv-details ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     color: var(--text-color);
+    font-size: 0.95rem;
 }
 
-.form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
-}
-
-.btn-submit {
-    width: 100%;
+.cv-details ul li i {
+    color: #0ea5e9;
+    font-size: 1.2rem;
+    width: 25px;
+    text-align: center;
 }
 
 /* --- Contact Section --- */
@@ -1142,6 +1254,7 @@ header {
     }
 
     .projects-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 kolom di desktop */
+        grid-template-columns: repeat(2, minmax(350px, 450px)); /* 2 kolom di-tengah untuk desktop */
+        justify-content: center;
     }
 }
